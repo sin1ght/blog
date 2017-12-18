@@ -1,0 +1,2 @@
+php_openssl.dll
+php_redis.dll
