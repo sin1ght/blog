@@ -1,6 +1,6 @@
-##一个基于thinkphp5的个人博客项目
+## 一个基于thinkphp5的个人博客项目
 
-#功能:
+# 功能:
 
 1.对csdn,掘金,segmentfault的当日文章进行采集，利用redis进行缓存，只保留一天
 
