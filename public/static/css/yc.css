@@ -1,0 +1,75 @@
+#content .article .item{
+    width: 100%;
+    height: 178px;
+    padding: 20px;
+    border-bottom: 1px #80808080 solid;
+}
+
+#content .article .item::after{
+    content: "";
+    clear: both;
+}
+
+#content .article .item .left{
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+#content .article .item .left img{
+    width: 224px;
+    height: 134px;
+}
+
+#content .article .item .right{
+    float: left;
+    width: 70%;
+    height:100%;
+}
+
+#content .article .item .right .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /*文本不换行，这样超出一行的部分被截取，显示... */
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+#content .article .item .right .title>a{
+    color: gray;
+}
+
+#content .article .item .right .title>a:hover{
+    cursor: pointer;
+    color: cadetblue;
+}
+
+#content .article .item .right .intro{
+    height:50%;
+    overflow: hidden;
+    padding: 7px;
+}
+
+#content .article .item .right .other_info{
+    font-size: 18px;
+    color: gray;
+    padding: 5px;
+}
+
+#content .article .item .right .other_info::after{
+    content: '';
+    clear: both;
+}
+
+#content .article .item .right .other_info .time{
+    float: left;
+}
+
+#content .article .item .right .other_info .collection{
+    float: right;
+    cursor: pointer;
+}
+
+#content .article .item .right .other_info .collection:hover{
+    color:cadetblue;
+}

@@ -1,0 +1,1 @@
+var main_host='http://www.tp5.com';

@@ -1,0 +1,227 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Consolas, "Liberation Mono", Courier, Verdana, "微软雅黑";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+a{
+    color:#566263;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.content{
+    width: 33%;
+    min-height: 51%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    background: white;
+    box-shadow: 1px 1px 0 1px white,-1px -1px 0 1px white;
+    border-radius: 5px;
+}
+
+.content .title{
+    width: 100%;
+    height: 17%;
+    /*background: cadetblue;*/
+    color: gray;
+}
+
+.content .title div{
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-size:1.2em;
+    line-height:3em;
+    text-align: center;
+    /*color: white;*/
+    cursor: pointer;
+    border-bottom: 1px cadetblue solid;
+    font-weight: bold;
+}
+
+.content .title div:first-child{
+   border-radius: 5px 0 0 0;
+}
+
+.content .title div:last-child{
+    border-radius: 0 5px 0 0;
+}
+
+.content .title div:hover{
+    color: cadetblue;
+}
+
+.content .title .active{
+    color: cadetblue;
+}
+
+.content .login{
+    /*background: rosybrown;*/
+    margin-left: 1%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.content  input{
+    border:none;
+    margin-bottom: 20px;
+    height:40px;
+    width:271px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    outline: none;
+    color: gray;
+}
+
+.content  input[type=text]{
+    padding-left: 10px;
+    border: 1px #b5b0b0c9 solid;
+}
+
+.content  input[type=password]{
+    padding-left: 10px;
+    border: 1px #b5b0b0c9 solid;
+}
+
+.content  input[type=submit]{
+    background:cadetblue;
+    width: 281px;
+    color: white;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgba(153, 153, 153, 0.47);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgba(153, 153, 153, 0.47);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgba(153, 153, 153, 0.47);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: rgba(153, 153, 153, 0.47);
+}
+
+.content  input:focus::-webkit-input-placeholder{
+    color: rgba(151, 152, 146, 0.78);
+}
+
+.content  input:focus:-moz-placeholder{
+    color: rgba(151, 152, 146, 0.78);
+}
+
+.content  input:focus::-moz-placeholder{
+    color: rgba(151, 152, 146, 0.78);
+}
+
+.content  input:focus:-ms-input-placeholder{
+    color: rgba(151, 152, 146, 0.78);
+}
+
+.content .login .login_logo a{
+    display: inline-block;
+    height: 32px;
+    width: 37px;
+    background:url("../img/login_logo.png");
+}
+
+.content .login .login_logo #qq{
+    background-position:0 0;
+}
+
+.content .login .login_logo #wechat{
+    background-position: -37px 0;
+}
+
+.content .login .login_logo #weibo{
+    background-position: -74px 0;
+}
+
+.content  input[type=tel]{
+    padding-left: 10px;
+    border: 1px #b5b0b0c9 solid;
+}
+
+.content  input[type=button]{
+    background:cadetblue;
+    width: 190px;
+    height: 42px;
+    color: white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.content  input[name=code]{
+    width:60px;
+}
+
+.content .register{
+    margin-left: 18%;
+    margin-top:20px;
+}
+
+.content .register .error_tips{
+    padding-left:24px;
+    color: #d43939;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    height: 18px;
+    overflow: hidden;
+    background: url("../img/error.png") no-repeat;
+}
+
+.content .register .password_tips{
+   margin-top: -10px;
+}
+
+.content .register .password_tips .ok{
+    padding-left:24px;
+    font-size: 14px;
+    height: 18px;
+    margin:10px 0;
+    overflow: hidden;
+    background: url("../img/green.png") no-repeat;
+}
+
+.content .register .password_tips .info{
+    padding-left:24px;
+    font-size: 14px;
+    margin:10px 0;
+    height: 18px;
+    overflow: hidden;
+    background: url("../img/info.png") no-repeat;
+}

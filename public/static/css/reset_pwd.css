@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    font-family: Consolas, "Liberation Mono", Courier, Verdana, "微软雅黑";
+    margin:0;
+    padding: 0;
+}
+
+.nav_t{
+    height:80px;
+    background: #f5f5f5;
+    padding-left: 10%;
+    padding-right:10%;
+}
+
+.nav_t ul>li{
+    list-style: none;
+    float: left;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    padding-top: 15px;
+}
+
+.nav_t ul>li div{
+    text-align: center;
+}
+
+.nav_t ul>li div>i{
+    color: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background:#9999994d;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+}
+
+
+.nav_t ul .active>div>i{
+    background:cadetblue;
+}
+
+.nav_t ul>li div p{
+    margin-top: 5px;
+    color:#a5a5a5;
+}
+.nav_t ul>li>i{
+    width: 220px;
+    height: 2px;
+    background: #ededed;;
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: 42%;
+}
+
+.nav_t ul .active>i{
+    background: -webkit-linear-gradient(left, cadetblue , #f5f5f5);
+    background: -o-linear-gradient(left, cadetblue , #f5f5f5); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left, cadetblue , #f5f5f5); /* Firefox 3.6 - 15 */
+    background: linear-gradient(left, cadetblue , #f5f5f5); /* 标准的语法 */
+}
+
+
+
+.content .container{
+    width: 262px;
+    min-height:100px;
+    margin:0 auto;
+    margin-top: 150px;
+    border: 1px #8080804d solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.content .container .step4{
+    text-align: center;
+}
+
+.content .container .step4 .completed_pic{
+    background-image: url('../img/common.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width:80px;
+    height:80px;
+    margin-left: 34px;
+}
+
+.content .container .step4 .completed_text{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+}
